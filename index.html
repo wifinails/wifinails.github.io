@@ -12,19 +12,20 @@ body {
   margin-left: 0px
 }
     </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
 .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto;
   place-items: center;
-  padding: 10px;
+  padding: 50px;
   margin: auto;
-  max-width: 800px;
+  max-width: 100%;
   row-gap: 40px;
 }
 .container > div {
   padding: 10px;
-  font-size: 30px;
+  font-size: 3vw;
   text-align: center;
 }
 
@@ -33,19 +34,27 @@ body {
   transition: transform .2s
 }
 
+ .rotate:hover {
+  animation: spin 2000ms linear infinite;
+}
        
 .row {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 5;
+  max-width: 100%;
 }
-    
+.hello {
+  grid-column-start: 2;
+  grid-column-end: 4; 
+    }
+ 
 .layout {
   width: 100%;
   display: grid;
   grid:
-    "header" 300px
-    "main" 2000px
-    "footer" 150px
+    "header" 
+    "main" 
+    "footer"
     / 100%;
   background-color:#FFDF00;
   font-family: "Cute Font", sans-serif;
@@ -53,29 +62,37 @@ body {
   font-style: normal;
 }
 
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  } }
   
 .box1 {
-  border: 5px solid #ED64F5;
   padding: 10px;
-  max-width: 100%;
-  max-height: 400px;
-  border-radius: 25px;
+  max-width: 300%;
+  max-height: 100%;
 }
 .box2 {
   border: 5px solid #ED64F5;
-  padding: 10px;
-  max-width: 150%;
-  max-height: 400px;
+  padding: 25px;
+  max-width: 100%;
+  max-height: 300px;
   border-radius: 25px;
   overflow:auto;
 }
 .header { grid-area: header; 
-  justify-self: center;
+  align-items: center;
+  max-width: 100%;
 }
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
 .main { grid-area: main;
   font-size: 22px;
-  
+  justify-self: center;
 }
 
 .footer { grid-area: footer; 
@@ -89,26 +106,27 @@ body {
   
 <section class="layout">
   <div class="header">
-    <a href="https://ibb.co/ymXjqvz7"><img src="https://i.ibb.co/XfbRt0nM/wifi-1640-x-600-px.png"></a>
+    <img src="https://i.ibb.co/XfbRt0nM/wifi-1640-x-600-px.png" width="75%" class="center">
     <br>
-    <img src="https://i10.glitter-graphics.org/pub/2648/2648460yqj3pf44k3.gif" style="display: block; margin-left: auto; margin-right: auto;"></img>
+    <img src="https://i10.glitter-graphics.org/pub/2648/2648460yqj3pf44k3.gif" width="70%" class="center"></img>
   </div>
   
   <div class="main">
     <div class="container">
-  <div><img src="https://web.archive.org/web/20091020201242/http://geocities.com/SunsetStrip/Exhibit/3391/spinning_globe2.gif">   <img src="https://artwork.neocities.org/photos/night/14.gif">   <img src="https://web.archive.org/web/20091020201242/http://geocities.com/SunsetStrip/Exhibit/3391/spinning_globe2.gif"><br><img src="https://99gifshop.neocities.org/items/1/adance2.gif"><br><img src="https://artwork.neocities.org/photos/oldweb/cool.gif"><br><img src="https://web.archive.org/web/20091027133446if_/http://geocities.com/babybluedolphin44/HWHANDWITHLONGNAILS.gif"><br></div>
-    <div><div class="box1"> <br>Hello, world.<br> Welcome to my homepage <br><br><img src="https://99gifshop.neocities.org/items/5/star_003b.gif" style="vertical-align:middle">
-      <br><br><img src="https://media.tenor.com/79S6pY1TBmkAAAAo/black-cat.png" width="50"style="vertical-align:middle">currently based in NYC <br><br></div></div>
-      <div class="row"><div class="box2"> <br>updates<br><br>website is up<br>testing a static landing layout<br>booking form is up<br>?ready to do this again?<br> .</div>test</div>
-  
-  <div><br><br><br><br><br><br><a href="https://ibb.co/8gFwdkFZ" target="_blank"><div class="zoom"><img src="https://i.ibb.co/qFJq556x/book-1000-x-1000-px-4.png"  width="50%" style="float: right" style="vertical-align:bottom"></img></div></a></div>
-  <div><a href="https://tally.so/r/mOyyza" target="_blank"><div class="zoom"><img src="https://i.ibb.co/m5jm8Q9Z/1.png" width="100%"></img></div></a></div>  
-  <div><a href="https://instagram.com/wifinails" target="_blank"><div class="zoom"><img src="https://i.ibb.co/cK2GjPSx/2.png" width="100%""></img></div></a></div>
-  <div><div class="zoom"><a href="https://www.youtube.com/watch?v=t38sMO7Q6Uo" target="_blank"><img src="https://web.archive.org/web/20090729045049/http://www.geocities.com/raveofkandie/aliennew.gif" width="93"></a></div><br>
-    <div class="zoom"><a href="mailto:wifinails@gmail.com" target="_blank"><img src="https://artwork.neocities.org/photos/night/pinkemail_ball.gif" width="120"></a></div><br><div class="zoom"><a href="https://90s.myretrotvs.com/#qcE-zCg9ck8" target="_blank"><img src="https://artwork.neocities.org/photos/oldweb/staticTV03.gif"></a></div><br></div>
+  <div><img src="https://web.archive.org/web/20091020201242/http://geocities.com/SunsetStrip/Exhibit/3391/spinning_globe2.gif">   <img src="https://artwork.neocities.org/photos/night/14.gif">   <img src="https://web.archive.org/web/20091020201242/http://geocities.com/SunsetStrip/Exhibit/3391/spinning_globe2.gif"><br><img src="https://99gifshop.neocities.org/items/1/adance2.gif"><br><img src="https://artwork.neocities.org/photos/oldweb/cool.gif"><br><img src="https://web.archive.org/web/20091027133446if_/http://geocities.com/babybluedolphin44/HWHANDWITHLONGNAILS.gif"><br><img src="https://99gifshop.neocities.org/items/5/star_003b.gif"><br></div>
+    <div class="hello"><img src="https://i.ibb.co/MxKS2Kw8/book-1000-x-1000-px-6.png" width="400px"></div>
+      <div><div class="zoom"><a href="https://www.youtube.com/watch?v=t38sMO7Q6Uo" target="_blank"><img src="https://web.archive.org/web/20090729045049/http://www.geocities.com/raveofkandie/aliennew.gif" width="93"></a></div>
+    <div class="zoom"><a href="mailto:wifinails@gmail.com" target="_blank"><img src="https://artwork.neocities.org/photos/night/pinkemail_ball.gif" width="120"></a></div><div class="zoom"><a href="https://90s.myretrotvs.com/#qcE-zCg9ck8" target="_blank"><img src="https://artwork.neocities.org/photos/oldweb/staticTV03.gif"></a></div><br></div>
+      <div class="row"><div class="box2"> <br>updates<br><br>website is up<br>testing a static landing layout<br>booking form is up<br> <br> ttesdegesgesgrdkgroisdghrdfoigfiognoifdhgnofidgnfgtrbngsnbsgngf</div></div>
+  <div class="row"><a href="https://tally.so/r/mOyyza" target="_blank"><div class="zoom"><img src="https://i.ibb.co/m5jm8Q9Z/1.png" width="70%"></img></div></a></div>
+  <div class="row"><a href="https://ibb.co/8gFwdkFZ" target="_blank"><div class="zoom"><img src="https://i.ibb.co/qFJq556x/book-1000-x-1000-px-4.png"  width="40%"></img></div></a></div>
+      
+  <div class="row"><a href="https://instagram.com/wifinails" target="_blank"><div class="zoom"><img src="https://i.ibb.co/cK2GjPSx/2.png" width="70%"></img></div></a></div>
+  <div>8</div>
   <div>9</div>
   <div>10</div>
 </div>
+    
     </div>
   <br>
   <div class="footer">
