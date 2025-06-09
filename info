@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+    <style type="text/css">
+body { 
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px
+}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  place-items: center;
+  padding: 30px;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  max-width: 100%;
+  row-gap: 30px;
+}
+    @media (min-width:1000px) {
+    .container {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+}
+.container > div {
+  padding: 20px;
+  font-size: 4vw;
+  text-align: center;
+}
+     @media (min-width:1000px) {
+    .container > div {
+        font-size: 2.25vw;
+    }
+}
+.zoom:hover {
+  transform: scale(1.1); 
+  transition: transform .2s
+}
+
+       
+
+ 
+.layout {
+  width: 100%;
+  display: grid;
+  grid:
+    "header" 
+    "main" 
+    "footer"
+    / 100%;
+  background-color:#FFDF00;
+  font-family: "Cute Font", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header { grid-area: header; 
+  align-items: center;
+  max-width: 100%;
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+    @media (min-width:1000px) {
+    .header {
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+.main { grid-area: main;
+  font-size: 22px;
+  justify-self: center;
+}
+
+.footer { grid-area: footer; 
+  justify-self: center;
+}
+  
+</style>
+    
+
+    
+<body>
+  
+<section class="layout">
+  <div class="header">
+    <img src="https://i.ibb.co/XfbRt0nM/wifi-1640-x-600-px.png" width="100%" class="center">
+    <br>
+    <img src="https://i10.glitter-graphics.org/pub/2648/2648460yqj3pf44k3.gif" width="90%" class="center"></img>
+  </div>
+  
+  <div class="main">
+    <div class="container">
+  
+      <div>booking info<br>················⋆⋅☆⋅⋆················<br> <div class="updates">03.06.25 connected my domain <3 <br>25.05.25 a basic landing page for proof of life..she responsive <br>21.05.25. booking form is up. thought abt using a site builder but decided on the old fashioned way<br>hello, world. <br></div></div>
+  
+</div>
+    
+    </div>
+  <br>
+  <div class="footer">
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div><a href="https://www.youtube.com/watch?v=t38sMO7Q6Uo" target="_blank"><img src="https://web.archive.org/web/20090729045049/http://www.geocities.com/raveofkandie/aliennew.gif" width="50vw"></a><a href="mailto:hello@wifinails.com" target="_blank"><img src="https://artwork.neocities.org/photos/night/pinkemail_ball.gif" width="80vw"></a><a href="https://90s.myretrotvs.com/#qcE-zCg9ck8" target="_blank"><img src="https://artwork.neocities.org/photos/oldweb/staticTV03.gif" width="50vw"></a></div>
+   </div>
+  </div>
+</section>
+
+</body>  
+  </head>
+</html>
